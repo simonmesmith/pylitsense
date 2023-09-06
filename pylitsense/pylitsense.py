@@ -1,6 +1,7 @@
 """Python wrapper for the LitSense API."""
 
 from dataclasses import dataclass
+from typing import Optional
 
 import requests
 
@@ -30,8 +31,8 @@ class PyLitSense:
         self,
         query_str: str,
         rerank: bool = True,
-        limit: int | None = None,
-        min_score: float | None = None,
+        limit: Optional[int] = None,
+        min_score: Optional[float] = None,
     ) -> list[LitSenseResult]:
         """Queries the LitSense API."""
         params = {"query": query_str, "rerank": rerank}
