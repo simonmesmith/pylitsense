@@ -71,3 +71,7 @@ The LitSense API itself has the following limitations:
 
 * Maximum of 100 results per query
 * Rate limit of one request per user per second
+
+In addition, this package is:
+
+* Only tested on Python 3.9, 3.10, and 3.11
